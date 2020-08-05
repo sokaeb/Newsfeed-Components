@@ -155,11 +155,10 @@ function articleMaker(articleObj){
   articleButton.addEventListener('click', event => {
     articleDiv.classList.toggle('article-open')
   })
-
   return articleDiv;
 }
 
-data.forEach( articleObj => {
+data.forEach(articleObj => {
   const theArticle = articleMaker(articleObj);
-  articleCont.append(theArticle);
+  articleCont.appendChild(theArticle);
 })
